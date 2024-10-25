@@ -66,9 +66,9 @@ const socket = net.createConnection(
   }
 );
 
-socket.on('end', () => {
-  console.log('Connection ended');
-});
+// socket.on('end', () => {
+//   console.log('Connection ended');
+// });
 
 socket.on('error', (err) => {
   console.error(`Connection error: ${err.message}`);
